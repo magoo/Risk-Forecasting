@@ -135,7 +135,7 @@
     ---
 
     # Risk Forecasting
-    ###Answering: "Did our security get better?"
+    ### Answering: "Did our security get better?"
 
     ---
 
@@ -154,9 +154,8 @@
     ## Think of a *big* risk that you _recently_ tried to mitigate.
 
     ---
-
     name: final
-    layout: false
+    layout: true
     class: left, top, inverse
     ---
 
@@ -184,30 +183,38 @@
     ---
 
     ## 1. Will this occur this year?
+
+    --
+
     ## 2. What are the odds?
 
     ---
 
-    ## You don't have to worry about correct answers.
+    ## You don't have to worry about correct answers yet.
+
+    --
+
+    ### We'll take this more seriously later.
+
     ---
 
-    ## You'll see why this doesn't matter later.
-    ---
     ## Here's an example answer.
+
     ---
     ## Scenario:
     ### We are knocked offline because of an incident in the next year.
     ---
-    ## Forecast:
+    ## Your forecast:
     ### There is a .red[33% chance] that this will happen.
 
     ---
 
     ## You're done!
-    ### That's it. We have successfully forecasted a risk. That was a measurement.
+    ### That's it. We have successfully forecasted a risk.
 
     ---
-    ## But this data is worthless until we fix it.
+
+    ## But this data is worthless unless we know how to use it.
 
     --
 
@@ -224,7 +231,7 @@
 
     --
 
-    ### Humans are notoriously overconfident with their knowledge, and proof is obtained through [trivial experimentation](https://machinelearnings.co/why-are-we-so-confident-2c3151a6d5d0).
+    ### Humans are easily overconfident with their knowledge. [Research](https://machinelearnings.co/why-are-we-so-confident-2c3151a6d5d0) agrees.
 
     --
 
@@ -256,7 +263,11 @@
 
     ---
 
-    ## Rigor can measurably improve forecasting.
+    ### (Let's not pretend that we liked color coded risk matrices anyway)
+
+    ---
+
+    ## Rigorous process can measurably improve forecasting.
     ### There are observable methods that make forecasts increasingly reliable.
 
     ---
@@ -302,11 +313,17 @@
     ---
 
     ### It's not specific enough to forecast. Let's time box it to "this year".
+
+    --
+
     ## Pick a timeframe.
 
     ---
 
     ### Add threat, vector, asset, when you can. These improve for future forecasts.
+
+    --
+
     ## Be less ambiguous.
 
     ---
@@ -336,10 +353,17 @@
     ### Picking a good scenario is a lot like agreeing on a problem.
 
     ---
-    ### For instance, vague scenarios will be better improved when more specific scenarios are forecasted. This is [Fermi's method](https://en.wikipedia.org/wiki/Fermi_problem) of decomposition.
+
+    ### A well designed scenario is vulnerable to [Fermi's methods](https://en.wikipedia.org/wiki/Fermi_problem) of decomposition.
+
     ---
-    ### Improve the forecaster and improve their [Brier score](https://en.wikipedia.org/wiki/Brier_score)
-    ## Calibrate your confidence.
+
+    ### Next, we improve the forecaster and improve [Brier scores](https://en.wikipedia.org/wiki/Brier_score).
+
+    --
+
+    ## Calibrate the forecaster's confidence.
+
     ---
 
     ### The Brier score measures how trustworthy someone's confidence is.
@@ -354,6 +378,8 @@
 
     ---
     ### You can measure someone's Brier score pretty easily.
+
+    --
 
     ### You just have to hold them accountable to their forecasts over time.
     ---
@@ -370,11 +396,22 @@
     ---
     ## We can improve this even *more*.
     ---
-    ## Let's remove bias.
-    ### Grab some friends.
+    ## Let's remove bias from our forecast.
+    ### You'd grab some friends, co-workers, experts, etc. Diverse is better.
     ---
-    ## Calibrate them.
-    ###<i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i>
+    ## Then, we'd calibrate them, too.
+    ###<i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i>
+
+    --
+
+    ### Now we have a group of forecasts we can average together.
+
+    --
+
+    ### Into one forecast.
+    ###<i class="fa fa-user" aria-hidden="true"></i>
+
+
     ---
     ### Groups seem to benefit greatly from combined forecasts.
     ---
@@ -402,7 +439,7 @@
 
     --
 
-    ###...with access to .red[confidential data].
+    ###...who had access to .red[confidential data].
 
     ---
 
@@ -436,7 +473,7 @@
 
     --
 
-    ## A group of calibrated security experts can record subjective probility scores against a given risk.
+    ## Calibrated experts can forecast the probability of a risk.
 
     ---
     template: inverse
@@ -446,7 +483,7 @@
     ## We're stil not done.
 
     --
-    
+
     ### This is *still not useful*.
 
     ---
@@ -460,10 +497,6 @@
     --
 
     ## It's impossible to know the true probability.
-
-    --
-
-    ### That is, until something bad happens.
 
     ---
 
@@ -483,11 +516,11 @@
 
     --
 
-    ### Accuracy needs to be close to the true probability. That will never succeed.
+    ### Accuracy needs to be close to the true probability. We'll never succeed.
 
     --
 
-    ### Precision is about reliably creating the same data, even if we're off.
+    ### Precision is about reliably creating the same result, even if we're off-center.
 
     ---
 
@@ -506,7 +539,7 @@
     layout: true
     ---
     ## Reducing probabilistic risk over time:
-    "An attacker obtains access to destructive AWS IAM permissions in the next 365 days."
+    "Attacker obtains keys for destructive AWS IAM permissions this year."
 
     --
 
@@ -526,7 +559,7 @@
 
     --
 
-    ## A increase in confidence against this threat of .green[15%].
+    ## An increase in confidence against this threat of .green[15%].
 
     ---
 
@@ -538,11 +571,24 @@
 
     --
 
-    ### I believe while we cannot see this oracle directly, we can predict its directionality.
+    ### We cannot see this oracle directly...
 
     --
 
-    ## Thus, we can measure risk.
+    ### ...but if a group of people can measure an ox,
+
+    --
+
+    ### Then our forecasts of risk likely share a direction with an oracle of risk.
+
+    --
+
+    ## If there is truth to this, then we have a huge opportunity.
+
+    ---
+    template: inverse
+
+    ## We can measure that we're getting better at security.
 
     ---
     </textarea>
