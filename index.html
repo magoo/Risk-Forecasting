@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
+    <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
+    <title>Remark</title>
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .green { color: green}
+      .large { font-size: 2em; }
+      a, a > code {
+        color: #af8a2d;
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      em {
+        font-style: italic;
+        filter: brightness(120%);
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #242424;
+        color: #6a6a6a;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 1em;
+      }
+
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+    name: inverse
+    layout: true
+    class: center, middle, inverse
+    ---
+
+    # Risk Forecasting
+    ###Answering: "Did our security get better?"
+
+    ---
+
+    ## This method is simple and powerful.
+
+    ---
+
+    ## In fact, you're going to measure a risk *right now*.
+
+    ---
+
+    ## It's our "Hello World".
+
+    ---
+
+    ## Think of a *big* risk that you _recently_ tried to mitigate.
+
+    ---
+
+    name: final
+    layout: false
+    class: left, top, inverse
+    ---
+
+    ## Examples:
+
+    --
+
+    ### Customer data is stolen.
+
+    --
+
+    ### Our CEO has malware on their laptop
+
+    --
+
+    ### We are knocked offline because of an incident.
+
+    ---
+    template: inverse
+    layout: true
+    ---
+
+    ## Now, ask yourself:
+
+    ---
+
+    ## 1. Will this occur this year?
+    ## 2. What are the odds?
+
+    ---
+
+    ## You don't have to worry about correct answers.
+    ---
+
+    ## You'll see why this doesn't matter later.
+    ---
+    ## Here's an example answer.
+    ---
+    ## Scenario:
+    ### We are knocked offline because of an incident in the next year.
+    ---
+    ## Forecast:
+    ### There is a .red[33% chance] that this will happen.
+
+    ---
+
+    ## You're done!
+    ### That's it. We have successfully forecasted a risk. That was a measurement.
+
+    ---
+    ## But this data is worthless until we fix it.
+
+    --
+
+    ### If you are not skeptical so far, you should be.
+
+    --
+
+    ### This forecast is littered with problems.
+
+    ---
+    template: final
+    layout: false
+    ## Why?
+
+    --
+
+    ### Humans are notoriously overconfident with their knowledge, and proof is obtained through [trivial experimentation](https://machinelearnings.co/why-are-we-so-confident-2c3151a6d5d0).
+
+    --
+
+    ### A [2005 book by Philip E. Tetlock](https://www.amazon.com/Expert-Political-Judgment-Good-Know/dp/0691128715) summarizes over a decade of research showing expert forecasts to be worse than simple, algorithmic approaches.
+
+    --
+
+    ### We are also bad at forecasting risk. Hardly a suprise.
+
+    ---
+    template: inverse
+    layout: true
+    ---
+
+    ### This may be one of the reasons we are so bad at preventing breaches.
+
+    ---
+
+    ## The same researcher (Tetlock) also spearheaded research into individuals [who were effective forecasters](https://www.amazon.com/Superforecasting-Science-Prediction-Philip-Tetlock-ebook/dp/B00RKO6MS8).
+
+    ---
+
+    ## These are now well researched subjects, and give insight effective forecasting methods.
+
+    ---
+
+    ## Forecasting is quantifiable.
+    ###It is measurable, unlike .red[high] or .green[low].
+
+    ---
+
+    ## Rigor can measurably improve forecasting.
+    ### There are observable methods that make forecasts increasingly reliable.
+
+    ---
+
+    ## We can turn that forecast into data that we can trust.
+
+    --
+
+    ### That .red[33%] value can become a meaningful decision making tool...
+
+    --
+
+    ### ...instead of feeling like a guess.
+
+    ---
+
+    # How do we fix this?
+
+    ---
+
+    ### We must surround the forecast with a _disciplined process_ to increase the value of the forecaster.
+
+    ---
+
+    ### Let's build that process.
+
+    ---
+
+    ## First, let's review another simple example.
+
+    ---
+
+    # An employee is infected with malware.
+
+    ---
+    ### You predict...
+    ## There is a .red[15%] chance that this will happen.
+
+    ---
+
+    ### Let's review the problems that stop us from taking this data seriously.
+
+    ---
+
+    ### It's not specific enough to forecast. Let's time box it to "this year".
+    ## Pick a timeframe.
+
+    ---
+
+    ### Add threat, vector, asset, when you can. These improve for future forecasts.
+    ## Be less ambiguous.
+
+    ---
+    ### Some examples:
+
+    ---
+    ## The CEO is infected by malware delivered by a spearphish in the next 365 days.
+    ---
+    ## A remote adversary obtains domain admin credentials on our corporate network and exfiltrates executive emails from Outlook within the next year.
+    ---
+    ## Remote code is successfully executed (RCE) on our production web application by a remote party, and passwords are siphoned out of memory to a remote host in the next month.
+    ---
+    ## A customer support representative will snoop around in a celebrity's private data this week.
+    ---
+    ## A worm taking advantage of a Cross Site Scripting vulnerability is propagating through our app and destroying data on black Friday.
+    ---
+    ## Our service is down for customers due to a Denial of Service attack during Q4.
+    ---
+    ### These are better, but they don't have to be perfect.
+
+    --
+
+    ### In fact, they may be too specific. We can ease up on that if we want, too.
+
+    --
+
+    ### Picking a good scenario is a lot like agreeing on a problem.
+
+    ---
+    ### For instance, vague scenarios will be better improved when more specific scenarios are forecasted. This is [Fermi's method](https://en.wikipedia.org/wiki/Fermi_problem) of decomposition.
+    ---
+    ### Improve the forecaster and improve their [Brier score](https://en.wikipedia.org/wiki/Brier_score)
+    ## Calibrate your confidence.
+    ---
+
+    ### The Brier score measures how trustworthy someone's confidence is.
+
+    --
+
+    ### Someone with a perfect Brier score is *right* when they say they are *right*.
+
+    --
+
+    ### They are *probably wrong* when they say they aren't sure.
+
+    ---
+    ### You can measure someone's Brier score pretty easily.
+
+    ### You just have to hold them accountable to their forecasts over time.
+    ---
+    ### You can quickly sample your own Brier score [here](http://confidence.success-equation.com).
+    ---
+    ### Go do this, then come back.
+    ---
+    ## Welcome back!
+    ### A [recent study](https://hbr.org/2016/05/superforecasting-how-to-upgrade-your-companys-judgment) shows that training of forecasting techniques, and awareness of one's own confidence can drastically improve forecasting abilities.
+    ---
+    ## You just practiced a little.
+    ---
+    ## Your forecasts are now more reliable.
+    ---
+    ## We can improve this even *more*.
+    ---
+    ## Let's remove bias.
+    ### Grab some friends.
+    ---
+    ## Calibrate them.
+    ###<i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i>
+    ---
+    ### Groups seem to benefit greatly from combined forecasts.
+    ---
+    ## A fun example.
+
+    --
+
+    ### In 1907, a group of 787 people [correctly guessed the weight of an Ox](https://arxiv.org/pdf/1410.3989.pdf).
+
+    --
+
+    ### This was documented in the book [The Wisdom of Crowds](https://www.amazon.com/Wisdom-Crowds-James-Surowiecki/dp/0385721706).
+
+    ---
+
+    ## A recent example.
+
+    --
+
+    ### This method was used to combine civilian [forecasters into teams](https://www.npr.org/sections/parallels/2014/04/02/297839429/-so-you-think-youre-smarter-than-a-cia-agent)...
+
+    --
+
+    ### ...and *beat* national security intelligence analysts...
+
+    --
+
+    ###...with access to .red[confidential data].
+
+    ---
+
+    ### So, where are we?
+
+    ---
+
+    name: final
+    layout: true
+    class: left, top, inverse
+
+    ---
+
+    # We have forecasting tools.
+
+    --
+
+    ### We should prefer to forecast specific, time boxed scenarios.
+
+    --
+
+    ### A group of diverse expert forecasts can smoothen out bias, like FUD and overconfidence.
+
+    --
+
+    ### We can be trained to calibrate our Brier scores. [Quickly](http://journal.sjdm.org/16/16511/jdm16511.pdf).
+
+    --
+
+    ### So...
+
+    --
+
+    ## A group of calibrated security experts can record subjective probility scores against a given risk.
+
+    ---
+    template: inverse
+    layout: true
+    ---
+
+    ## We're stil not done.
+
+    --
+    
+    ### This is *still not useful*.
+
+    ---
+
+    ### We have improved our ability to forecast, but we can't predict the future.
+
+    ---
+
+    ### We can't know what is written in the cosmic notebook.
+
+    --
+
+    ## It's impossible to know the true probability.
+
+    --
+
+    ### That is, until something bad happens.
+
+    ---
+
+    ## This doesn't matter.
+
+    --
+
+    ### We're not trying to find a bullseye.
+
+    --
+
+    ### We're just trying to get closer to it.
+
+    ---
+
+    ## This is a matter of accuracy versus *precision*.
+
+    --
+
+    ### Accuracy needs to be close to the true probability. That will never succeed.
+
+    --
+
+    ### Precision is about reliably creating the same data, even if we're off.
+
+    ---
+
+    ### To put this simply...
+
+    --
+
+    ## We may never find the cosmic "bullseye".
+
+    --
+
+    ## Instead, we can track progress towards it.
+
+    ---
+    template: final
+    layout: true
+    ---
+    ## Reducing probabilistic risk over time:
+    "An attacker obtains access to destructive AWS IAM permissions in the next 365 days."
+
+    --
+
+    ### 2016 - Q3: .red[25%]
+
+    --
+
+    ### 2016 - Q4: .red[23%]
+
+    --
+
+    ### 2017 - Q1: .red[16%]
+
+    --
+
+    ### 2017 - Q2: .green[10%]
+
+    --
+
+    ## A increase in confidence against this threat of .green[15%].
+
+    ---
+
+    ## Directionality of confidence is all that matters.
+
+    --
+
+    ### It may be impossible to find an oracle of probability for each risk.
+
+    --
+
+    ### I believe while we cannot see this oracle directly, we can predict its directionality.
+
+    --
+
+    ## Thus, we can measure risk.
+
+    ---
+    </textarea>
+        <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    <script>
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="remark.language.js"></script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        }) ;
+    </script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44561333-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = 'https://ssl.google-analytics.com/ga.js';
+        var s = document.scripts[0];
+        s.parentNode.insertBefore(ga, s);
+      }());
+    </script>
+  </body>
+</html>
