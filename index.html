@@ -134,8 +134,16 @@
     class: center, middle, inverse
     ---
 
-    # Risk Forecasting
-    ### "Did our security get better?"
+    # Risk for Engineers
+    ### Measuring the reduction of "_bad things_" in our future
+
+    ---
+
+    ## Problem:
+
+    --
+
+    ### I build security things, but I can't measure what difference it made.
 
     ---
 
@@ -186,7 +194,7 @@
 
     --
 
-    ## 2. What are the odds?
+    ## 2. What are the odds that it will?
 
     ---
 
@@ -194,11 +202,15 @@
 
     --
 
-    ### We'll take this more seriously later.
+    ### In fact, being "correct" might not matter.
 
     ---
 
-    ## Here's an example answer.
+    ### That part is most important, you'll soon understand why.
+
+    ---
+
+    ## Here's an example scenario.
 
     ---
     ## Scenario:
@@ -214,15 +226,15 @@
 
     ---
 
-    ## But this data is worthless unless we know how to use it.
+    ## But this data is .red[worthless] unless we know how to use it.
 
     --
 
-    ### If you are not skeptical so far, you should be.
+    ### Be skeptical!
 
     --
 
-    ### This forecast is littered with problems.
+    ### This forecast has lots of problems.
 
     ---
     template: final
@@ -231,15 +243,19 @@
 
     --
 
-    ### Humans are easily overconfident with their knowledge. [Research](https://machinelearnings.co/why-are-we-so-confident-2c3151a6d5d0) agrees.
+    ### People are highly biased with guesses. [Research](https://machinelearnings.co/why-are-we-so-confident-2c3151a6d5d0) agrees.
 
     --
 
-    ### A [2005 book by Philip E. Tetlock](https://www.amazon.com/Expert-Political-Judgment-Good-Know/dp/0691128715) summarizes over a decade of research showing expert forecasts to be worse than simple, algorithmic approaches.
+    ### A [decade of research](https://www.amazon.com/Expert-Political-Judgment-Good-Know/dp/0691128715) shows experts to be hilariously weak at predictions.
 
     --
 
-    ### We are also bad at forecasting risk. Hardly a suprise.
+    ### Risk involves the probability of future events.
+
+    --
+
+    ### As "experts", we are also .red[worse] at predicting risks.
 
     ---
     template: inverse
@@ -250,29 +266,47 @@
 
     ---
 
-    ## The same researcher (Tetlock) also spearheaded research into individuals [who were effective forecasters](https://www.amazon.com/Superforecasting-Science-Prediction-Philip-Tetlock-ebook/dp/B00RKO6MS8).
+    ### By default, we are weak at predictions, and worse at measuring risk.
 
     ---
 
-    ## These are now well researched subjects, and give insight effective forecasting methods.
+    ## This issue is rampant in our industry.
 
     ---
 
-    ## Forecasting is quantifiable.
-    ###It is measurable, unlike .red[high] or .green[low].
+    ### But there's hope!
 
     ---
 
-    ### (Let's not pretend that we liked color coded risk matrices anyway)
+    ## High risk industries rely on probabilistic approaches to risk.
+
+    --
+
+    ### [Space](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120001369.pdf), [Nuclear](https://www.nrc.gov/about-nrc/regulatory/risk-informed/pra.html), [Oil](https://www.bsee.gov/sites/bsee.gov/files/interagency-agreements-mous-moas//nasa-bsee-iaa-1-28-16.pdf), [Environmental](https://www.epa.gov/risk/policy-use-probabilistic-analysis-risk-assessment-epa)
+
+    --
+
+    ## For some reason, we haven't been.
 
     ---
 
-    ## Rigorous process can measurably improve forecasting.
-    ### There are observable methods that make forecasts increasingly reliable.
+    ## Forecasting fills in the gaps where "_We don't have data!_"
+
+    --
+
+    ### It turns out, this is not a valid excuse in any other industry.
 
     ---
 
-    ## We can turn that forecast into data that we can trust.
+    ## It's easy to mimic the habits of [effective forecasters](https://www.amazon.com/Superforecasting-Science-Prediction-Philip-Tetlock-ebook/dp/B00RKO6MS8).
+
+    ---
+
+    ## These methods are easy to copy, with measurable results.
+
+    ---
+
+    ### This means rigorous forecasts can be relied on for decisions.
 
     --
 
@@ -284,11 +318,11 @@
 
     ---
 
-    # How do we fix this?
+    # How do we fix our forecast?
 
     ---
 
-    ### We must surround the forecast with a _disciplined process_ to increase the value of the forecaster.
+    ### The forecast needs _discipline_ to increase the value of the _forecaster_.
 
     ---
 
@@ -301,6 +335,7 @@
     ---
 
     # An employee is infected with malware.
+    ### 💻️
 
     ---
     ### You predict...
@@ -308,7 +343,7 @@
 
     ---
 
-    ### Let's review the problems that stop us from taking this data seriously.
+    ### We require _rigor_ to take this seriously.
 
     ---
 
@@ -330,27 +365,26 @@
     ### Some examples:
 
     ---
-    ## The CEO is infected by malware delivered by a spearphish in the next 365 days.
+    ## A C-Level executive is infected with malware in the next quarter.
     ---
-    ## A remote adversary obtains domain admin credentials on our corporate network and exfiltrates executive emails from Outlook within the next year.
+    ## An employee is infected by an email attachment, resulting in a .red[SEV1] incident this year.
     ---
-    ## Remote code is successfully executed (RCE) on our production web application by a remote party, and passwords are siphoned out of memory to a remote host in the next month.
+    ## Compromised employees are discovered by malware discovered as a result of next week's C&C hunt.
     ---
-    ## A customer support representative will snoop around in a celebrity's private data this week.
-    ---
-    ## A worm taking advantage of a Cross Site Scripting vulnerability is propagating through our app and destroying data on black Friday.
-    ---
-    ## Our service is down for customers due to a Denial of Service attack during Q4.
-    ---
+
     ### These are better, but they don't have to be perfect.
 
     --
 
-    ### In fact, they may be too specific. We can ease up on that if we want, too.
+    ### Picking a good scenario is a lot like agreeing on a problem.
 
     --
 
-    ### Picking a good scenario is a lot like agreeing on a problem.
+    ## Nearly any future event can be forecasted.
+
+    ---
+
+    ### Also:
 
     ---
 
@@ -366,45 +400,40 @@
 
     --
 
-    ## The forecaster should see all decomposed data or forecasts.
+    ## A forecast improves with any data, _even just a little_.
 
     ---
 
-    ### Next, we improve the forecaster and improve [Brier scores](https://en.wikipedia.org/wiki/Brier_score).
+    ### Next, we improve the forecaster.
 
     --
 
-    ## Calibrate the forecaster's confidence.
+    ## We calibrate the forecaster's sense of certainty.
 
     ---
 
-    ### The Brier score measures how trustworthy someone's confidence is.
-
-    --
-
-    ### Someone with a perfect Brier score is *right* when they say they are *right*.
-
-    --
-
-    ### They are *often wrong* when they say they aren't sure.
+    ### This fixes problems with forecasting bias.
 
     ---
-    ### You can measure someone's Brier score pretty easily.
+
+    ### It helps us avoid overconfidence.
+    ### It focuses our personal "certainty" about information.
 
     --
 
-    ### You just have to hold them accountable to their forecasts over time.
+    ## It becomes simple to assign numbers to our certainty.
+
     ---
-    ### You can quickly sample your own Brier score [here](http://confidence.success-equation.com), or [here](http://sethrylan.org/bayesian/calibrate.html).
+    ### You can quickly sample your own skills [here](http://confidence.success-equation.com), or [here](http://sethrylan.org/bayesian/calibrate.html).
     ---
     ### Go do this, then come back.
     ---
     ## Welcome back!
-    ### A [recent study](https://hbr.org/2016/05/superforecasting-how-to-upgrade-your-companys-judgment) shows that training of forecasting techniques, and awareness of one's own confidence can drastically improve forecasting abilities.
+    ### [Recent studies](https://hbr.org/2016/05/superforecasting-how-to-upgrade-your-companys-judgment) show that minimal training will drastically improve forecasting abilities.
     ---
-    ## You just practiced a little.
+    ## That means you just practiced a little.
     ---
-    ## Your forecasts are now more reliable.
+    ## That also means your forecasts are now more reliable.
     ---
     ## We can improve this even *more*.
     ---
@@ -416,7 +445,11 @@
 
     --
 
-    ### Now we can average them together into one forecast:  <i class="fa fa-user" aria-hidden="true"></i>
+    ### Now we can average them together into one forecast:
+
+    --
+
+    ### <i class="fa fa-user" aria-hidden="true"></i>
 
     ---
     ### Groups seem to benefit greatly from combined forecasts.
@@ -429,7 +462,8 @@
 
     --
 
-    ### This was documented in the book [The Wisdom of Crowds](https://www.amazon.com/Wisdom-Crowds-James-Surowiecki/dp/0385721706).
+    .footnote[see [The Wisdom of Crowds](https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds)]
+
 
     ---
 
@@ -441,7 +475,7 @@
 
     --
 
-    ### ...and *beat* national security intelligence analysts...
+    ### ...who .red[beat] national security intelligence analysts...
 
     --
 
@@ -450,6 +484,10 @@
     ---
 
     ### So, where are we?
+
+    --
+
+    ## Lets summarize.
 
     ---
 
@@ -463,15 +501,15 @@
 
     --
 
-    ### We should prefer to forecast specific, time boxed scenarios.
+    ### Forecasts are improved with specific, time boxed scenarios.
 
     --
 
-    ### A group of diverse expert forecasts can smoothen out bias, like FUD and overconfidence.
+    ### Groups of diverse expert forecasts can smoothen out bias, like FUD and overconfidence.
 
     --
 
-    ### We can be trained to calibrate our Brier scores. [Quickly](http://journal.sjdm.org/16/16511/jdm16511.pdf).
+    ### We can be trained to calibrate ourselves. [Quickly](http://journal.sjdm.org/16/16511/jdm16511.pdf).
 
     --
 
@@ -494,27 +532,44 @@
 
     ---
 
-    ### We have improved our ability to forecast, but we can't predict the future.
+    ### We have improved our ability to forecast, but who says we can actually predict the future?
 
     ---
 
-    ### We can't know what is written in the cosmic notebook.
+    ### We can't.
 
-    --
+    ### We can't know what future is written in the cosmic notebook.
 
-    ## It's impossible to know the true probability.
+    ### 🌌🧙‍♂️‍📖🧙‍♀️🌌
 
     ---
 
-    ## This doesn't matter.
+    ## There is an _actual_ probibility we don't see.
 
-    --
+    ---
+
+    ## Some events we need to forecast cannot be tracked afterwards.
+
+    ---
+
+    ### There are _oracles_ we don't get to see.
+
+    ---
+
+    ## We have to work without access to it.
+
+    ---
+
+    ## With these methods,
+    ## we're not pretending to find that number.
+
+    ---
 
     ### We're not trying to find a bullseye.
 
     --
 
-    ### We're just trying to get closer to it.
+    ### We're just trying to get measurably closer to one.
 
     ---
 
@@ -522,9 +577,12 @@
 
     --
 
-    ### Accuracy needs to be close to the true probability. We'll never succeed.
-
+    ### Accuracy needs to be close to the true probability.
     --
+
+    ### We'll never know if we succeeded.
+
+    ---
 
     ### Precision is about reliably creating the same result, even if we're off-center.
 
@@ -540,12 +598,20 @@
 
     ## Instead, we can track progress towards it.
 
+    --
+
+    ## 🎯
+
     ---
     template: final
     layout: true
     ---
     ## Reducing probabilistic risk over time:
-    "Attacker obtains keys for destructive AWS IAM permissions this year."
+    Scenario: _"Attacker obtains keys for destructive AWS IAM permissions in the next 365 days."_
+
+    --
+
+    Let's run forecasts every quarter while we mitigate this risk.
 
     --
 
@@ -569,7 +635,7 @@
 
     --
 
-    ## The Forecasts aren't the goal. Progress is.
+    ## We have measured better .green[good] outcomes over .red[bad].
 
     ---
 
@@ -577,19 +643,15 @@
 
     --
 
-    ### It may be impossible to find an oracle of probability for each risk.
+    ### It is impossible to read the oracle of probability for each risk.
 
     --
 
-    ### We cannot see this oracle directly...
+    ### If our efforts mitigate risk, we believe we influence these "oracles".
 
     --
 
-    ### ...but if a group of people can measure an ox,
-
-    --
-
-    ### Then our forecasts of risk likely share a direction with an oracle of risk.
+    ### Then our forecasts of risk likely share a direction with an unknown oracle.
 
     --
 
