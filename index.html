@@ -159,7 +159,11 @@
 
     ---
 
-    ## Think of a *big* risk that you _recently_ tried to mitigate.
+    ## Think of what you're working on right now.
+
+    --
+
+    ### Now think of a specific scenario that you're hoping to prevent.
 
     ---
     name: final
@@ -310,7 +314,7 @@
 
     --
 
-    ### That .red[33%] value can become a meaningful decision making tool...
+    ### That .red[33%] value could be a reliable piece of data...
 
     --
 
@@ -343,23 +347,32 @@
 
     ---
 
-    ### We require _rigor_ to take this seriously.
-
-    ---
-
+    ## First:
     ### It's not specific enough to forecast. Let's time box it to "this year".
 
+    ---
+
+    ## _An employee is infected with malware..._
+
     --
 
-    ## Pick a timeframe.
+    # This quarter.
 
     ---
 
-    ### Add threat, vector, asset, when you can. These improve for future forecasts.
+    ### Add specific threats, vector, asset, as makes sense.
+
+    ---
+
+    ## _An employee is infected with malware this year_
 
     --
 
-    ## Be less ambiguous.
+    ### How about...
+
+    ---
+
+    ## _A C-Level executive is infected with malware this year_
 
     ---
     ### Some examples:
@@ -380,19 +393,15 @@
 
     --
 
-    ## Nearly any future event can be forecasted.
+    ## Nearly any future event can be forecasted
+
+    --
+
+    ### So long as it is concrete.
 
     ---
 
-    ### Also:
-
-    ---
-
-    ### A well designed scenario is vulnerable to [Fermi's methods](https://en.wikipedia.org/wiki/Fermi_problem) of decomposition.
-
-    ---
-
-    ### We want to break down any available measurable data about the scenario.
+    ### We want to [break down](https://en.wikipedia.org/wiki/Fermi_problem) any available measurable data about the scenario.
 
     --
 
@@ -530,15 +539,31 @@
 
     ### This is *still not useful*.
 
+    --
+
+    ### We haven't measured _that what you are working on is valuable_
+
+    --
+
+    ## We'll get there!
+
     ---
 
-    ### We have improved our ability to forecast, but who says we can actually predict the future?
+    ### To understand how we measure risk, we first need to acknowledge how little we know about risk.
 
     ---
 
-    ### We can't.
+    ### Who says we can always predict the future?
+
+    ---
+
+    ### We can't, really.
+
+    --
 
     ### We can't know what future is written in the cosmic notebook.
+
+    --
 
     ### 🌌🧙‍♂️‍📖🧙‍♀️🌌
 
@@ -561,11 +586,11 @@
     ---
 
     ## With these methods,
-    ## we're not pretending to find that number.
+    ## we're not pretending that can predict the future.
 
     ---
 
-    ### We're not trying to find a bullseye.
+    ### We're not trying to find a cosmic bullseye.
 
     --
 
@@ -603,43 +628,43 @@
     ## 🎯
 
     ---
+
+    ## Let's measure your work.
+    ### Assume you are improving the security of your AWS infrastructure.
+
+    --
+
+    ### Let's run forecasts every quarter while we mitigate this risk.
+
+    ---
     template: final
     layout: true
     ---
-    ## Reducing probabilistic risk over time:
-    Scenario: _"Attacker obtains keys for destructive AWS IAM permissions in the next 365 days."_
+
+    ##Scenario: _"An attacker can access destructive AWS IAM permissions in the next 365 days."_
 
     --
-
-    Let's run forecasts every quarter while we mitigate this risk.
-
+    #### 2016 - Q3: .red[25%]
+    First forecast. We haven't fixed anything yet.
     --
 
-    ### 2016 - Q3: .red[25%]
-
+    #### 2016 - Q4: .red[23%]
+    We have limited the destructive capability of keys in production.
     --
 
-    ### 2016 - Q4: .red[23%]
-
+    #### 2017 - Q1: .red[16%]
+    We added multifactor protection to keys used by engineers.
     --
 
-    ### 2017 - Q1: .red[16%]
-
+    #### 2017 - Q2: .green[10%]
+    We took keys out of source code and use roles now.
     --
 
-    ### 2017 - Q2: .green[10%]
-
-    --
-
-    ## An increase in confidence against this threat of .green[15%].
-
-    --
-
-    ## We have measured better .green[good] outcomes over .red[bad].
+    ## An increase in confidence against this risk of .green[15%].
 
     ---
 
-    ## Directionality of confidence is all that matters.
+    ## This directionality of confidence is all that matters.
 
     --
 
@@ -661,7 +686,7 @@
     template: inverse
 
     ## We can measure that we're getting better at security.
-    .footnote[These slides are paired up with this [article](https://medium.com/starting-up-security/killing-chicken-little-measure-and-eliminate-risk-through-forecasting-ecdf4c7e9575).]
+    .footnote[Read more:  [1](https://medium.com/starting-up-security/killing-chicken-little-measure-and-eliminate-risk-through-forecasting-ecdf4c7e9575), [2](https://magoo.github.io/simple-risk-analysis/).]
 
     </textarea>
         <script src="https://remarkjs.com/downloads/remark-latest.min.js">
